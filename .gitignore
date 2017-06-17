@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/nogit_artik.h
+/nogit_wifi.h
