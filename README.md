@@ -25,5 +25,5 @@ ESP8266-ArtikIntegration.ino to change
 
 
 You will also need 
-	the ArduinoJson library for the Json parsing
-	the WebSockets library
+*	the ArduinoJson library for the Json parsing  
+*	the WebSockets library  
