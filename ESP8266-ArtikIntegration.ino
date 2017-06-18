@@ -20,17 +20,13 @@
 #include <WebSocketsServer.h>
 #include <ArduinoJson.h>
 
-#define DEVICE_ID YOUR_DEVICE_ID
-#define DEVICE_TOKEN YOUR_DEVICE_TOKEN
 
-#if (DEVICE_ID == YOUR_DEVICE_ID)
-/*IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT
-/*  for privacy reasons I keep my sensitive info in a header file that isn't included
- *  You should provide your device id and token 
- **************************************************************************************/
-  #include "nogit_artik.h"
-#endif
- 
+#define DEVICE_TOKEN // YOUR_DEVICE_ID
+#define DEVICE_ID // YOUR_DEVICE_TOKEN
+
+/* IMPORTANT, if this line is left in, delete it! */
+#include "nogit_artik.h"
+
 
 
 WebSocketsClient webSocket;
@@ -149,7 +145,7 @@ void sendStateToArtik(boolean state,int level) {
     // no need to send authorization for WebSockets, we did that when we registered
     root["sdid"] = DEVICE_ID;
     root["data"] = jsonBuffer.createObject();
-    root["data"]["state"] = RawJson(state ? "true" : "false");
+    root["data"]["state"] = RawJson(state ? "on" : "off");
     root["data"]["level"] = level;
     S.println("sending:");
 

@@ -2,13 +2,11 @@
 #define WiFi_SID YOUR_WIFI_SID
 #define WiFi_pwd YOUR_WIFI_PWD
 
-#if (WiFi_SID == YOUR_WIFI_SID)
+
 /* IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
- *  for privacy reasons I keep my sensitive info in a header file that isn't included
- *  You should provide your wifi sid and pwd in the lines above!
- **************************************************************************************/
-# include "nogit_wifi.h"
-#endif
+ *  If the #include nogit_wifi.h is left in the code, 
+ */
+#include "nogit_wifi.h" // DELETE this line if it is accidentally left in!!
 
 
 
