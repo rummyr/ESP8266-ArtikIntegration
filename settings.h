@@ -10,7 +10,7 @@
 
 void doWiFiWaitDHCP();
 
-#define BAUD 74880
+
 #define S Serial
 
 
