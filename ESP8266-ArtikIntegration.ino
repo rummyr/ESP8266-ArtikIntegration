@@ -19,14 +19,14 @@
 #include <WebSocketsClient.h>
 #include <WebSocketsServer.h>
 #include <ArduinoJson.h>
+#define BAUD 74880
 
 
 #define DEVICE_TOKEN // YOUR_DEVICE_ID
 #define DEVICE_ID // YOUR_DEVICE_TOKEN
-#define BAUD 74880
 
-/* IMPORTANT, if this line is left in, delete it! */
-#include "nogit_artik.h"
+/* IMPORTANT, if next line is left in, delete it! and edit DEVICE_TOKEN/ID above*/
+#include "nogit_artik.h" // where I store DEVICE_TOKEN and DEVICE_ID, which you should define ABOVE!
 
 
 

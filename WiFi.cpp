@@ -3,10 +3,10 @@
 #define WiFi_pwd YOUR_WIFI_PWD
 
 
-/* IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
- *  If the #include nogit_wifi.h is left in the code, 
- */
-#include "nogit_wifi.h" // DELETE this line if it is accidentally left in!!
+// IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+//  If the #include nogit_wifi.h is left in the code, delete it!
+/* IMPORTANT, if next line is left in, delete it! and edit WiFi_SID / pwd above*/ 
+#include "nogit_wifi.h" //  where I store WiFi_SID and WiFi_pwd, which you should define above
 
 
 
